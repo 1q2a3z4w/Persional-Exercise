@@ -1,0 +1,602 @@
+/* 公共CSS样式 */
+/* 去除自带样式 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	color: #666666;
+	text-decoration: none;
+}
+
+/* 去除点击输入框的外轮廓 */
+input,
+textarea {
+	outline: none;
+	padding-left: 0px;
+}
+
+/* 标题栏 */
+.top {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.top_right {
+	float: right;
+	position: relative;
+	top: -30px;
+	width: 300px;
+	font-size: 12px;
+}
+
+/* 搜索框 */
+.serach {
+	border: 1px black solid;
+	border-radius: 10px;
+	height: 20px;
+	width: 210px;
+	background-repeat: round;
+	overflow: hidden;
+}
+
+/* 输入框 */
+.serach input {
+	float: right;
+	position: absolute;
+	top: 2px;
+	left: 20px;
+	width: 60%;
+	border: transparent;
+}
+
+/* 图片 */
+.serach img {
+	width: 22px;
+	height: 22px;
+	z-index: 15;
+}
+
+.login_register {
+	position: absolute;
+	right: 0px;
+	line-height: 12px;
+}
+
+.login_register a:hover {
+	color: #AD3B3B;
+}
+
+/* <!-- 导航栏 --> */
+.nav {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.nav-box {
+
+	height: 58px;
+	background-color: #AD3B3B;
+}
+
+/* 超链接 */
+.nav-box a {
+	color: #fff;
+	display: inline-block;
+	line-height: 58px;
+	padding: 0 20px;
+}
+
+.center {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.nli {
+	flex: 1;
+	text-align: center;
+}
+
+.nli:hover {
+	border-radius: 0px;
+	background: linear-gradient(145deg, #9c3535, #b93f3f);
+	box-shadow: 5px 5px 25px #792929,
+		-5px -5px 25px #e14d4d;
+}
+
+.submenu {
+	width: 150px;
+	height: 300px;
+	/* 顶层叠放 */
+	z-index: 99999999;
+	background-color: #AD3B3B;
+	position: absolute;
+	display: none;
+	/* overflow: hidden; */
+}
+
+.nli:hover .submenu {
+	display: block;
+}
+
+.nav .submenu .cont dd a:hover {
+	color: #dddddd;
+}
+
+
+.carousel {
+	margin: 20px auto;
+	width: 960px;
+	height: 328px;
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel .container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	display: flex;
+	/* 过渡动画 1s */
+	transition: all 1s;
+}
+
+.carousel .container a {
+	width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+}
+
+.carousel .container a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel .shift .btn {
+	/* 绝对定位且垂直居中 */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	background-color: #AD3B3B;
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 40px;
+	font-weight: bold;
+	/* 字符水平垂直居中 */
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	/* 不透明度 0.5 */
+	opacity: 0.5;
+}
+
+.carousel .shift .left {
+	left: 20px;
+}
+
+.carousel .shift .right {
+	right: 20px;
+}
+
+.carousel .bottom {
+	position: absolute;
+	bottom: 20px;
+	/* 绝对定位水平居中 */
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/* 宽度等同于内容宽度 */
+	width: max-content;
+	display: flex;
+	/* 指示器间距 */
+	gap: 10px;
+}
+
+.carousel .bottom .indicator {
+	height: 5px;
+	width: 40px;
+	background-color: white;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.carousel:hover .bottom .indicator {
+	opacity: 1;
+}
+
+.carousel:hover .shift .btn {
+	opacity: 1;
+}
+
+.part-1 {
+	margin-top: 30px;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.news {
+	border-radius: 20px;
+	color: black;
+	width: 480px;
+	background-color: #F6F6F6;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.part-1 .news table tr td img {
+	width: 9px;
+	height: 9px;
+}
+
+.news a:visited {
+	color: #666666;
+}
+
+.news:hover {
+
+	background: linear-gradient(145deg, #ffffff, #d6d6d6);
+	box-shadow: 10px 10px 20px #c8c8c8,
+		-10px -10px 20px #ffffff;
+}
+
+.news a:hover {
+	text-decoration-line: underline;
+	color: #b93f3f;
+
+}
+
+.picture {
+	border-radius: 20px;
+	width: 480px;
+	height: 300px;
+	background-image: url("../picture/01.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: all .5s ease .1s
+}
+
+.picture:hover {
+	transform: scale(1.1, 1.1);
+	box-shadow: #666666;
+}
+
+.part-bottom {
+	position: relative;
+	margin-top: 100px;
+	/*等于footer的高度*/
+	text-align: center;
+	background-color: #AD3B3B;
+	color: #dddddd;
+	width: 100%;
+}
+
+.part-title {
+	text-align: center;
+	font-size: 20px;
+	background-color: #AD3B3B;
+	color: #F6F6F6;
+	line-height: 40px;
+	height: 40px;
+}
+
+.part-2 {
+	margin-top: 30px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.dynamic table tr td img {
+	padding-left: -5px;
+	width: 9px;
+	height: 9px;
+}
+
+.dynamic {
+	border-radius: 20px;
+	width: 480px;
+	background-color: #F6F6F6;
+	height: 200px;
+	overflow: hidden;
+}
+
+.dynamic:hover {
+	background: #F6F6F6;
+	box-shadow: 7px 7px 14px #d1d1d1,
+		-7px -7px 14px #ffffff;
+}
+
+.dynamic a:hover {
+	text-decoration: underline solid 1px;
+	color: #b93f3f;
+}
+
+.notice a:hover {
+	text-decoration: underline solid 1px;
+	color: #b93f3f;
+}
+
+.notice:hover {
+	background: #F6F6F6;
+	box-shadow: 7px 7px 14px #d1d1d1, -7px -7px 14px #ffffff;
+}
+
+.notice {
+	border-radius: 20px;
+	display: inline-block;
+	background-color: #F6F6F6;
+	height: 200px;
+	width: 480px;
+	overflow: hidden;
+}
+
+.xiaoyuan {
+	margin: 100px auto;
+	overflow: hidden;
+	width: 960px;
+}
+
+.roll-picture {
+	width: 960px;
+	height: 120px;
+	margin: auto;
+	background-color: #dddddd;
+	overflow: hidden;
+}
+
+.roll-picture ul li {
+	width: 150px;
+	float: left;
+	padding: 10px;
+}
+
+.roll-picture ul {
+	width: 150%;
+	animation-name: move;
+	/*名称*/
+	animation-duration: 12s;
+	/*耗时*/
+	animation-iteration-count: infinite;
+	/*设置无限滚动*/
+	animation-timing-function: linear;
+	/*设置时间函数*/
+}
+
+.roll-picture ul li img {
+	width: 100%;
+	transition: all .5s ease .1s
+}
+
+.roll-picture ul li img:hover {
+	width: 100%;
+	transform: scale(1.3, 1.3);
+}
+
+.rolln {
+	text-align: center;
+}
+
+/* 创建动画 */
+@keyframes move {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-460px);
+	}
+}
+
+/* 鼠标浮动暂停动画 */
+.roll-picture:hover>ul {
+	cursor: pointer;
+	animation-play-state: paused;
+}
+
+/* 校园概况 */
+.content {
+	width: 1000px;
+	margin: 20px auto;
+	box-sizing: border-box;
+}
+
+.navBox {
+	display: flex;
+}
+
+.pic {
+	flex: 1;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 1px black solid;
+	/* display: inline-block; */
+}
+
+.txt {
+	/* display: inline; */
+	flex: 2;
+	height: 350px;
+}
+
+.intro_pic {
+	background-image: url(../picture/xiaohui.png);
+}
+
+.intro_text p {
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+.he_pic {
+	background-image: url(../picture/bBJ1.jpg);
+	background-size: 100%;
+}
+
+.he_text p {
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+.his_pic {
+	height: 450px;
+	background-image: url(../picture/old.png);
+	background-position: center;
+}
+
+.his_text {
+	height: 450px;
+}
+
+.his_text p {
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+.fea_pic {
+	background-image: url(../picture/playGroung.png);
+	background-size: 100%;
+	background-position: center;
+}
+
+.tea_pic {
+	background-image: url(../picture/6.jpg);
+	background-size: 100%;
+	background-position: center;
+}
+
+.tea_text p {
+	text-indent: 2em;
+	line-height: 20px;
+}
+
+.heNews {
+	display: flex;
+}
+
+.left_content {
+	width: 300px;
+}
+
+.nsli {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: #666666 1px solid;
+}
+
+.nsli:hover {
+	background-color: #ededed;
+}
+
+.right_content {
+	width: 700px;
+	border: 1px black solid;
+}
+
+.position {
+	text-align: right;
+	font-size: 12px;
+	color: black;
+}
+
+.right_content a:hover {
+	color: #AD3B3B;
+	text-decoration: underline;
+}
+
+.right_content a {
+	color: black;
+}
+
+.login {
+	color: white;
+	box-sizing: border-box;
+	border: 1px solid #AD3B3B;
+	height: 300px;
+	width: 500px;
+	margin: 80px auto;
+	background-image: url(../picture/VCG41N696525378.jpg);
+	background-size: 100%;
+}
+
+.login input {
+	outline: none;
+	height: 30px;
+	width: 300px;
+}
+
+.login table button {
+
+	background-color: #b70000;
+	border: none;
+}
+
+.login table a {
+	color: white;
+}
+
+.login table a:hover {
+	color: #AD3B3B;
+}
+
+.login table button:hover {
+	background-color: #AD3B3B;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.register {
+	border: #AD3B3B 2px solid;
+	border-radius: 5px;
+	width: 600px;
+	margin: 80px auto;
+}
+
+.register [type='text'] {
+	height: 30px;
+	width: 200px;
+}
+
+.register [type='password'] {
+	height: 30px;
+	width: 200px;
+}
+
+.register .td_left {
+	text-align: right;
+	width: 200px;
+}
+
+.register .td_right {
+	text-align: left;
+}
+
+.register form button:hover {
+	background-color: #AD3B3B;
+	border-radius: 10px;
+	transition: 0.3s;
+}

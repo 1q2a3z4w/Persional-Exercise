@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>吕梁市贺昌中学</title>
+		<link rel="stylesheet" href="01.css">
+		<link rel="shortcut icon" href="../picture/图标.ico" />
+	</head>
+	<body>
+		<!-- 标题栏 -->
+		<div class="top">
+			<div class="logo">
+				<img src="../picture/logo.jpg" alt="吕梁市贺昌中学" width="300" height="50">
+			</div>
+			<div class="top_right">
+				<div class="serach" style="display: inline-block;">
+					<input type="text" placeholder="搜索内容" name="serch" style="display: inline-block;">
+					<img src="../picture/serch.png" alt="">
+				</div>
+				<div class="login_register" style="display: inline-block; line-height: 16px;">
+					<a href="./login.html">登录&nbsp;</a><span>|</span><a href="./register.html">&nbsp;注册</a>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav-box">
+			<div class="nav">
+				<ul class="center">
+					<li class="nli"> <a href="./index.html">首页</a></li>
+					<li class="nli n0"> <a href="School.html">学校概况</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w1"><a href="School.html#1231">学校简介</a></dd>
+								<dd class="w1"><a href="School.html#1232">贺昌英名</a></dd>
+								<dd class="w1"><a href="School.html#1233">校史长廊</a></dd>
+								<dd class="w1"><a href="School.html#1234">校园风貌</a></dd>
+								<dd class="w1"><a href="School.html#1235">教学设施</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n1"> <a href="./heNews.html">贺中新闻</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w2"><a href="heNews.html#1221">校园新闻</a></dd>
+								<dd class="w2"><a href="heNews.html#1222">视频新闻</a></dd>
+								<dd class="w2"><a href="heNews.html#1223">媒体报道</a></dd>
+						</div>
+					</li>
+					<li class="nli n2"> <a href="#4">党建工作</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w3"><a href="#1211">组织机构</a></dd>
+								<dd class="w3"><a href="#1212">工作动态</a></dd>
+								<dd class="w3"><a href="#1213">思想建设</a></dd>
+								<dd class="w3"><a href="#1214">网上党建</a></dd>
+								<dd class="w3"><a href="#1215">党员风采</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n3"> <a href="#5">教学科研</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w4"><a href="#131">教学管理</a></dd>
+								<dd class="w4"><a href="#132">教学活动</a></dd>
+								<dd class="w4"><a href="#133">德育工作</a></dd>
+								<dd class="w4"><a href="#134">科研交流</a></dd>
+								<dd class="w4"><a href="#135">成果展示</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n4"> <a href="#6">教师频道</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w5"><a href="#141">教师风采</a></dd>
+								<dd class="w5"><a href="#142">教学心得</a></dd>
+								<dd class="w5"><a href="#143">经验交流</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n5"> <a href="#7">学生天地</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w6"><a href="#151">社团活动</a></dd>
+								<dd class="w6"><a href="#152">德育活动</a></dd>
+								<dd class="w6"><a href="#153">心理辅导</a></dd>
+								<dd class="w6"><a href="#154">学生荣誉</a></dd>
+								<dd class="w6"><a href="#155">学生作品</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n6"> <a href="#8">招生招聘</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w7"><a href="#161">招聘信息</a></dd>
+								<dd class="w7"><a href="#162">招生公告</a></dd>
+								<dd class="w7"><a href="#163">报名指导</a></dd>
+								<dd class="w7"><a href="#164">志愿指导</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n7"> <a href="email.html">校长信箱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 轮播图 -->
+		<div class="carousel">
+		    <div class="container">
+		        <img src="../picture/banner1.jpg"/>
+		        <img src="../picture/banner2.jpg"/>
+				<img src="../picture/banner3.jpg"/>
+				<img src="../picture/banner4.jpg"/>
+				<img src="../picture/banner7.jpg"/>
+			</div>
+		    <div class="shift">
+		        <div class="btn left" onclick="leftShift()">&lt;</div>
+		        <div class="btn right" onclick="rightShift()">&gt;</div>
+		    </div>
+		    <div class="bottom"></div>
+		</div>
+		<!-- 第一块 -->
+		<div class="part-1">
+			<div class="news">
+				<h3 class="part-title">学校要闻</h3>
+				<table width="90%" height="25" border=0 align="center" cellPadding=0 cellSpacing=0 id=tab1>
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="newstitle2">
+							<img src="../picture/i1.gif" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#101"
+								title="吕梁市贺昌中学各党支部召开“冲刺年度目标任务”主题党日活动" target="_blank">
+								<font class="s">吕梁市贺昌中学各党支部召开“冲刺年度目标</font>…
+							</a> </td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="newstitle2">
+							<img src="../picture/i1.gif" width="9" height="9" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#102" title="创设情境教学，让语文课飞扬"
+								target="_blank">
+								<font class="s">创设情境教学，让语文课飞扬</font>
+							</a> </td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="103">
+							<img src="../picture/i1.gif" width="9" height="9" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#104"
+								title="筑牢“办好人民满意”的教育意识——学习十九届六中全会精神心得体会" target="_blank">
+								<font class="s">筑牢“办好人民满意”的教育意识——学习十</font>…
+							</a></td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="newstitle2">
+							<img src="../picture/i1.gif" width="9" height="9" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#105"
+								title="吕梁市贺昌中学学习贯彻党的十九届六中全会精神" target="_blank">
+								<font class="s">吕梁市贺昌中学学习贯彻党的十九届六中全会</font>…
+							</a> </td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="newstitle2">
+							<img src="../picture/i1.gif" width="9" height="9" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#106"
+								title="吕梁市贺昌中学传达学习第十二次省党代会精神" target="_blank">
+								<font class="s">吕梁市贺昌中学传达学习第十二次省党代会精</font>…
+							</a> </td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+					<tr>
+						<td width="5%" height=25 align="center" valign="middle" class="newstitle2">
+							<img src="../picture/i1.gif" width="9" height="9" align="top">
+						</td>
+						<td width="75%" valign="middle" class="newstitle2">&nbsp;<a href="#107"
+								title="吕梁市贺昌中学全校师生收听收看山西省第十二次党代会开幕盛况" target="_blank">
+								<font class="s">吕梁市贺昌中学全校师生收听收看山西省第十</font>…
+							</a> </td>
+						<td width="20%" align="right" class="newstitle2">[2021/12/15]</td>
+					</tr>
+				</table>
+			</div>
+			<div class="picture">
+			</div>
+		</div>
+		<!-- 第二块 -->
+		<div class="part-2">
+			<div class="dynamic">
+				<h3 class="part-title">专题报道</h3>
+				<table width="100%" height="25" border=0px align="center" id=tab2>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="吕梁市贺昌中学各党支部召开“冲刺年度目标任务”主题党日活动" target="_blank">
+								<font class="s">吕梁市贺昌中学各党支部召开“冲刺年度目标任务”主题党日活动</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2102" title="吕梁市贺昌中学学习贯彻党的二十大会议精神" target="_blank">
+								<font class="s">吕梁市贺昌中学学习贯彻党的二十大会议精神</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2103" title="吕梁市贺昌中学学习贯彻习总书记《用好红色资源，传承好红色基因，把红色江山代代传下去》重要文章"
+								target="_blank">
+								<font class="s">吕梁市贺昌中学学习贯彻习总书记《用好红色资源，传承好红色基因，把红色江山代代传下去》重要文章</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2104" title="中共吕梁市贺昌中学党委中心组进行党史学习教育第五次集中学习" target="_blank">
+								<font class="s">中共吕梁市贺昌中学党委中心组进行党史学习教育第五次集中学习</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2104" title="吕梁市贺昌中学召开101教育合作大会" target="_blank">
+								<font class="s">吕梁市贺昌中学召开101教育合作大会</font>
+							</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="notice">
+				<h3 class="part-title">公告通知</h3>
+				<table width="100%" height="25" border=0px align="center" cellPadding=0 cellSpacing=0 id=tab3>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="关于开展“我的中国梦—奋斗的青春" 主题演讲活动"的通知 target="_blank">
+								<font class="s">关于开展“我的中国梦—奋斗的青春"主题演讲活动的通知</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="2022年山西省普通高中学业水平考试通知" target="_blank">
+								<font class="s">2022年山西省普通高中学业水平考试通知</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="2022年寒假放假通知" target="_blank">
+								<font class="s">2022年寒假放假通知</font>
+							</a></td>
+					</tr>
+					<tr>
+						<td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="关于召开学期末全校教师评价活动的通知" target="_blank">
+								<font class="s">关于召开学期末全校教师评价活动的通知</font>
+							</a></td>
+					</tr>
+					<tr>
+					 <td width="5" align="center">
+							<img src="../picture/i1.gif" width="9" height="9" align="center">
+						</td>
+						<td width="500"><a href="#2101" title="关于检修教室内公共教学用品的通知" target="_blank">
+								<font class="s">关于检修教室内公共教学用品的通知</font>
+							</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- 滚动图 -->
+		<div class="xiaoyuan">
+			<h3 class="part-title">校园风貌</h3>
+			<div class="roll-picture">
+				<ul>
+					<li>
+						<div class="rolln roll1"><img src="../picture/堂槐.jpg" alt=""> 堂槐</div>
+					</li>
+					<li>
+						<div class="rolln roll2"><img src="../picture/体育场.jpg" alt="">体育场</div>
+					</li>
+					<li>
+						<div class="rolln roll3"><img src="../picture/古文庙.jpg" alt="">古文庙</div>
+					</li>
+					<li>
+						<div class="rolln roll4"><img src="../picture/篮球场.jpg" alt="">篮球场</div>
+					</li>
+					<li>
+						<div class="rolln roll5"><img src="../picture/教学楼.jpg" alt="">教学楼</div>
+					</li>
+					<li>
+						<div class="rolln roll1"><img src="../picture/堂槐.jpg" alt=""> 堂槐</div>
+					</li>
+					<li>
+						<div class="rolln roll2"><img src="../picture/体育场.jpg" alt="">体育场</div>
+					</li>
+					<li>
+						<div class="rolln roll3"><img src="../picture/古文庙.jpg" alt="">古文庙</div>
+					</li>
+					<li>
+						<div class="rolln roll4"><img src="../picture/篮球场.jpg" alt="">篮球场</div>
+					</li>
+					<li>
+						<div class="rolln roll5"><img src="../picture/教学楼.jpg" alt="">教学楼</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<footer class="part-bottom">
+			<p>&nbsp;</p>
+			<p>Copyright 2014 He Chang Middle School All Rights Reserved</p>
+			<p>版权所有/吕梁市贺昌中学 联系地址：吕梁市贺昌路 电话：0358-8223328 </p>
+			<p>&nbsp;</p>
+		</footer>
+		
+		<script>
+		    // 显示的图片下标
+		    let index = 0
+		
+		    // 图片的数量
+		    let imageCount = document.querySelectorAll(
+		        ".carousel .container img"
+		    ).length
+		
+		    const bottom = document.querySelector(".carousel .bottom")
+		    for (let i = 0; i < imageCount; i++) {
+		        // DOM 操作
+		        // 创建底部按钮
+		        const indicator = document.createElement("div")
+		        indicator.classList.add("indicator")
+		        indicator.onclick = () => setIndex(i)
+		
+		        bottom.append(indicator)
+		    }
+		
+		    function createAuto() {
+		        return setInterval(() => {
+		            index++
+		            refresh()
+		        }, 3000)
+		    }
+		
+		    // 自动滚动
+		    let autoTimer = createAuto()
+		
+		    function refresh() {
+		        if (index < 0) {
+		            // 下标小于 0 时
+		            // 设置最右的图片
+		            index = imageCount - 1
+		        } else if (index >= imageCount) {
+		            // 下标超过上限时
+		            // 设置最左的图片
+		            index = 0
+		        }
+		
+		        // 获取轮播框元素
+		        let carousel = document.querySelector(".carousel")
+		
+		        //获取轮播框的宽度
+		        let width = getComputedStyle(carousel).width
+		        width = Number(width.slice(0, -2))
+		
+		        carousel.querySelector(".container").style.left =
+		            index * width * -1 + "px"
+		    }
+		
+		    let refreshWrapper = (func) => {
+		        // refresh 装饰器
+		        return function (...args) {
+		            let result = func(...args)
+		            refresh()
+		            // 重置自动滚动
+		            clearInterval(autoTimer)
+		            autoTimer = createAuto()
+		            return result
+		        }
+		    }
+		
+		    let leftShift = refreshWrapper(() => {
+		        index--
+		    })
+		    let rightShift = refreshWrapper(() => {
+		        index++
+		    })
+		
+		    let setIndex = refreshWrapper((idx) => {
+		        index = idx
+		    })
+		    refresh()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>吕梁市贺昌中学--注册</title>
+		<link rel="stylesheet" href="01.css">
+		<link rel="shortcut icon" href="../picture/图标.ico" />
+	</head>
+	<body>
+		<!-- 标题栏 -->
+		<div class="top">
+			<div class="logo">
+				<img src="../picture/logo.jpg" alt="吕梁市贺昌中学" width="300" height="50">
+			</div>
+			<div class="top_right">
+				<div class="serach" style="display: inline-block;">
+					<input type="text" placeholder="搜索内容" name="serch" style="display: inline-block;">
+					<img src="../picture/serch.png" alt="">
+				</div>
+				<div class="login_register" style="display: inline-block; line-height: 16px;">
+					<a href="./login.html">登录&nbsp;</a><span>|</span><a href="./register.html">&nbsp;注册</a>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav-box">
+			<div class="nav">
+				<ul class="center">
+					<li class="nli"> <a href="./index.html">首页</a></li>
+					<li class="nli n0"> <a href="School.html">学校概况</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w1"><a href="#1231">学校简介</a></dd>
+								<dd class="w1"><a href="#1232">贺昌英名</a></dd>
+								<dd class="w1"><a href="#1233">校史长廊</a></dd>
+								<dd class="w1"><a href="#1234">校园风貌</a></dd>
+								<dd class="w1"><a href="#1235">教学设施</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n1"> <a href="./heNews.html">贺中新闻</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w2"><a href="#1221">校园新闻</a></dd>
+								<dd class="w2"><a href="#1222">视频新闻</a></dd>
+								<dd class="w2"><a href="#1223">媒体报道</a></dd>
+						</div>
+					</li>
+					<li class="nli n2"> <a href="#4">党建工作</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w3"><a href="#1211">组织机构</a></dd>
+								<dd class="w3"><a href="#1212">工作动态</a></dd>
+								<dd class="w3"><a href="#1213">思想建设</a></dd>
+								<dd class="w3"><a href="#1214">网上党建</a></dd>
+								<dd class="w3"><a href="#1215">党员风采</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n3"> <a href="#5">教学科研</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w4"><a href="#131">教学管理</a></dd>
+								<dd class="w4"><a href="#132">教学活动</a></dd>
+								<dd class="w4"><a href="#133">德育工作</a></dd>
+								<dd class="w4"><a href="#134">科研交流</a></dd>
+								<dd class="w4"><a href="#135">成果展示</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n4"> <a href="#6">教师频道</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w5"><a href="#141">教师风采</a></dd>
+								<dd class="w5"><a href="#142">教学心得</a></dd>
+								<dd class="w5"><a href="#143">经验交流</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n5"> <a href="#7">学生天地</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w6"><a href="#151">社团活动</a></dd>
+								<dd class="w6"><a href="#152">德育活动</a></dd>
+								<dd class="w6"><a href="#153">心理辅导</a></dd>
+								<dd class="w6"><a href="#154">学生荣誉</a></dd>
+								<dd class="w6"><a href="#155">学生作品</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n6"> <a href="#8">招生招聘</a>
+						<div class="submenu">
+							<dl class="cont">
+								<dd class="w7"><a href="#161">招聘信息</a></dd>
+								<dd class="w7"><a href="#162">招生公告</a></dd>
+								<dd class="w7"><a href="#163">报名指导</a></dd>
+								<dd class="w7"><a href="#164">志愿指导</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li class="nli n7"> <a href="email.html">校长信箱</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="register">
+			<form action="http://127.0.0.1:8000/register" method="post" align="center">
+				<table style="width: 600px; height: 300px; margin: 0 auto;">
+					<tr>
+						<td class="td_left">用户名：</td>
+						<td class="td_right"><input type="text" name="user" id="user" placeholder="请输入用户名"></td>
+						<td><span id="demo1"></span></td>
+					</tr>
+					<tr>
+						<td class="td_left">密&nbsp;&nbsp;&nbsp;码：</td>
+						<td class="td_right" colspan="2"><input type="password" name="pwd" id="pwd" placeholder="请输入密码"
+								minlength="6"></td>
+					</tr>
+					<tr>
+						<td class="td_left">确认密码：</td>
+						<td class="td_right"><input type="password" name="pwds" id="pwds" placeholder="请输入密码"
+								minlength="6"></td>
+						<td><span id="demo2"></span></td>
+					</tr>
+					<tr>
+						<td class="td_left">性&nbsp;&nbsp;&nbsp;别：</td>
+						<td class="td_right" colspan="2"><input type="radio" value="1" name="a" id="man">
+							<label for="man">男</label>
+							<input type="radio" value="2" name="a" id="woman" value="2">
+							<label for="woman">女</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">邮&nbsp;&nbsp;&nbsp;箱：</td>
+						<td class="td_right"><input type="text" name="email" id="email" placeholder="请输入邮箱"></td>
+					</tr>
+					<tr style="text-align: center;">
+						<td colspan="3"><button style="width: 200px;height: 30px; border: none;
+				background-color: #AD3B3B; color: aliceblue;" id="btn2">立即注册</button></td>
+					</tr>
+					<tr style="text-align: center;">
+						<td colspan="2"><a href="./login.html">已有账号?&nbsp;返回登录</a></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+
+
+		<div class="part-bottom">
+			<p>&nbsp;</p>
+			<p>Copyright 2014 He Chang Middle School All Rights Reserved</p>
+			<p>版权所有/吕梁市贺昌中学 联系地址：吕梁市贺昌路 电话：0358-8223328 </p>
+			<p>&nbsp;</p>
+		</div>
+		<script>
+			pwds.onblur = function() {
+				var x = pwd.value
+				var y = pwds.value
+				if (x !== y) {
+					demo2.innerHTML = "两次输入的密码不一致！"
+				} else {
+					demo2.innerHTML = " "
+				}
+			}
+			// btn2.onclick = function (){
+			// 	var a = user.value
+			// 	var b = pwd.value
+			// 	var c = sex.value
+			// 	var d = email.value
+			// 	//发送Ajax请求
+			// 	//1.创建HTTP请求对象
+			// 	var data = `"user="${a}"&pwd="${b}"&sex="${c}"email="${d}`
+			// 	var xhr = new XMLHttpRequest()
+			// 	//2.打开服务器连接，设置要请求的接口
+			// 	//open里写三个参数：请求方式，接口地址，是否异步
+			// 	xhr.open('post','http://127.0.0.1:8000/register',true)
+			// 	xhr.setRequestHeader('Content_Typt','application/json')
+			// 	var jsondata = JSON.stringify(data)
+			// 	console.log(jsondata)
+			// 	console.log(data)
+			// 	xhr.send(data)
+			// 	//3.发送请求
+			// 	//4.绑定事件，监听请求
+			// 	xhr.onload = function(){
+			// 		//获取响应事件的文本
+			// 		console.log(xhr.responseText)
+			// 		alert(xhr.responseText)
+			// 	}
+			// }
+		</script>
+	</body>
+</html>
